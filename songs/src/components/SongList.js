@@ -7,11 +7,7 @@ class SongList extends React.Component{
         super(props);
         console.log(this.props);
     }
-    
-    onButtonClick = (song)=>{
-        this.props.selectSong(song);
-        console.log(this.props);
-    }  
+     
     renderSongList = ()=>{
         return this.props.songs.map(song=>{
             return (
